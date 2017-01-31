@@ -14,8 +14,16 @@
     var inputElement = document.getElementById("button")
 
     inputElement.addEventListener ("click" , function () {
-        alert(textInputElement.value);
+
+        var text = textInputElement.value;
+        text = text.replace(/:D/g,"--");
+        text = text.replace(/:o/g,"--");
+        text = text.replace(/:3/g,"--");
+
+        console.log(text);
+
     });
+    
     </script>
 
 </html>
